@@ -5,40 +5,33 @@
 #
 
 # Name of this project
-name: ""
+name: "Example Cardano stake pool on AWS"
 
 # Short description of this project
 description: |-
-  Add here
+  A full Cardano stake pool infrastructure build using GitHub actions. Fork and launch in your own AWS account. Your feedback and issues are welcome.
 
 # Canonical GitHub repo
-github_repo: osodevops/some-repo
+github_repo: osodevops/aws-cardano-example-stake-pool
 
 # How to use this project
 usage: |-
   ### Requirements
   None.
 
-  ### Role Variables
-  Some information
-  ```yaml
-    ---
-  ```
-
-# Example usage
-examples: |-
-  Follow this example
-  ```yaml
-      ---
-  ```
+  ### Features
+    - Automatic backup and restore from S3.
+    - Auto healing architecture.
+    - Automatic bootstrapping of custom AMI with user-data.
+    - Ability to customised install with Packer builder.
 
 related:
-  - name: ""
-    description: ""
-    url: "https://github.com/osodevops/"
+  - name: "Caradno Node Ansible role"
+    description: "Playbook to install binary dependencies"
+    url: "https://github.com/osodevops/ansible-role-cardano-node"
 
 # References
 references:
-  - name: ""
-    description: ""
-    url: "https://"
+  - name: "Mylo Staking"
+    description: "We at OSO are supporting the decentralised movement by running our own stake pool."
+    url: "https://https://mylo.me/"
